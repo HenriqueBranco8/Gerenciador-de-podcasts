@@ -1,13 +1,15 @@
 import {IncomingMessage, request, ServerResponse} from 'http'
 import {listEpisodes} from '../services/list-Episodes'
 import { filterEpisodes } from '../services/filter-Episodes'
+import { StatusCode } from '../utils/status-code'
+import { ContentType } from '../utils/content-type'
 
 
 
 export const getListEpisodes = async (request: IncomingMessage, response: ServerResponse) => {
     
     const content = await listEpisodes()
-    response.writeHead(200, {'Content-Type': 'aplication/json'})
+    response.writeHead(StatusCode.OK, {'Content-Type': ContentType.JSON})
     response.end(JSON.stringify(content))
 
 }
@@ -16,8 +18,7 @@ export const getListEpisodes = async (request: IncomingMessage, response: Server
 
 
 export const getFilterEpisodes = async(request: IncomingMessage, response: ServerResponse) => {
-    const queryString = request.url?.split('?p=')[1] || ''
-    const content = await filterEpisodes(queryString)
-    response.writeHead(200, {'Content-Type': 'aplication/json'})
+    const content = await filterEpisodes(request.url)
+    response.writeHead(200, {'Content-Type': ContentType.JSON})
     response.end(JSON.stringify(content))
 }
