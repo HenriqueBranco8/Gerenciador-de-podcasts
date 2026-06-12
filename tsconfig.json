@@ -1,17 +1,18 @@
 {
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
-
-    "outDir": "dist",
-    "rootDir": "./src",
+    "rootDir": "./",
+    "outDir": "./dist",
+    "module": "commonjs",
     "esModuleInterop": true,
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "commonjs",
+
     "target": "es2020",
     // and npm install -D @types/node
     // Recommended Options
     "strict": true,
-    "types": ["node"]
+    "types": ["node"],
+    "sourceMap": true
   }
 }
