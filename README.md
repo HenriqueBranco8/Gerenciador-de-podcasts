@@ -1,7 +1,5 @@
 # 🎙️ Podcast Manager
 
-projeto desenvolvido durante o curso da DIO.ME
-
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge\&logo=node.js\&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge\&logo=typescript\&logoColor=white)
 ![NPM](https://img.shields.io/badge/NPM-CB3837?style=for-the-badge\&logo=npm\&logoColor=white)
@@ -28,10 +26,9 @@ A aplicação foi construída utilizando o módulo HTTP nativo do Node.js, sem u
 * [Possíveis melhorias futuras](#possiveis-melhorias-futuras)
 * [Autor](#autor)
 
->>>>>>> 68dbff1bee5c3dcf838830d7de8625ace64951e2
-
-
 ---
+
+<a id="funcionalidades"></a>
 
 ## 🚀 Funcionalidades
 
@@ -42,6 +39,8 @@ A aplicação foi construída utilizando o módulo HTTP nativo do Node.js, sem u
 * API criada sem framework externo
 
 ---
+
+<a id="tecnologias-utilizadas"></a>
 
 ## 🛠️ Tecnologias utilizadas
 
@@ -55,6 +54,8 @@ A aplicação foi construída utilizando o módulo HTTP nativo do Node.js, sem u
 | MVC         | Organização arquitetural do projeto                   |
 
 ---
+
+<a id="estrutura-do-projeto"></a>
 
 ## 📁 Estrutura do projeto
 
@@ -71,6 +72,8 @@ src/
 ```
 
 ---
+
+<a id="como-instalar"></a>
 
 ## 📦 Como instalar
 
@@ -94,6 +97,8 @@ npm install
 
 ---
 
+<a id="como-executar"></a>
+
 ## ▶️ Como executar
 
 Para rodar o projeto em ambiente de desenvolvimento:
@@ -109,6 +114,8 @@ http://localhost:3636
 ```
 
 ---
+
+<a id="rotas-da-api"></a>
 
 ## 🌐 Rotas da API
 
@@ -190,6 +197,8 @@ http://localhost:3636/api/episodes?p=Red-Cast
 
 ---
 
+<a id="rotas-disponiveis"></a>
+
 ## 🧭 Rotas disponíveis
 
 As rotas da aplicação estão centralizadas no arquivo de rotas:
@@ -207,6 +216,8 @@ export enum Routes {
 | GET    | `/api/episodes?p=nome-do-podcast` | Filtra episódios por nome do podcast |
 
 ---
+
+<a id="exemplo-do-servidor"></a>
 
 ## 🧩 Exemplo do servidor
 
@@ -235,6 +246,8 @@ export const server = http.createServer(
 
 ---
 
+<a id="arquitetura"></a>
+
 ## 🏗️ Arquitetura
 
 O projeto segue uma organização baseada em MVC, separando responsabilidades em diferentes camadas:
@@ -252,6 +265,8 @@ O projeto segue uma organização baseada em MVC, separando responsabilidades em
 
 ---
 
+<a id="possiveis-melhorias-futuras"></a>
+
 ## 📈 Possíveis melhorias futuras
 
 * Adicionar novos métodos HTTP, como POST, PUT e DELETE
@@ -265,6 +280,8 @@ O projeto segue uma organização baseada em MVC, separando responsabilidades em
 * Criar paginação para listagem de episódios
 
 ---
+
+<a id="autor"></a>
 
 ## 👨‍💻 Autor
 
