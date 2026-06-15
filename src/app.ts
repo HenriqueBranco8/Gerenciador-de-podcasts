@@ -20,5 +20,5 @@ export const server = http.createServer( async (request: http.IncomingMessage, r
     //filter episodes
     if(request.method === HttpMethod.GET && baseUrl === Routes.EPISODES){
         await getFilterEpisodes(request, response)
-    }
+    }   
 })
