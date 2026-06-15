@@ -24,7 +24,7 @@ A aplicação foi construída utilizando o módulo HTTP nativo do Node.js, sem u
 * [Rotas da API](#-rotas-da-api)
 * [Rotas disponíveis](#-rotas-disponiveis)
 * [Exemplo do servidor](#-exemplo-do-servidor)
-* [Arquitetura](#-arquitetura)
+* [Arquitetura](#EF%B8%8F-arquitetura)
 * [Possíveis melhorias futuras](#-possiveis-melhorias-futuras)
 * [Autor](#-autor)
 
