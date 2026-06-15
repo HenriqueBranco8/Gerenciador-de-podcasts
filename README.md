@@ -16,17 +16,19 @@ A aplicação foi construída utilizando o módulo HTTP nativo do Node.js, sem u
 
 ## 📌 Índice
 
-* [Funcionalidades](#-funcionalidades)
-* [Tecnologias utilizadas](#-tecnologias-utilizadas)
-* [Estrutura do projeto](#-estrutura-do-projeto)
-* [Como instalar](#-como-instalar)
-* [Como executar](#-como-executar)
-* [Rotas da API](#-rotas-da-api)
-* [Rotas disponíveis](#-rotas-disponiveis)
-* [Exemplo do servidor](#-exemplo-do-servidor)
-* [Arquitetura](#-arquitetura)
-* [Possíveis melhorias futuras](#-possiveis-melhorias-futuras)
-* [Autor](#-autor)
+* [Funcionalidades](#funcionalidades)
+* [Tecnologias utilizadas](#tecnologias-utilizadas)
+* [Estrutura do projeto](#estrutura-do-projeto)
+* [Como instalar](#como-instalar)
+* [Como executar](#como-executar)
+* [Rotas da API](#rotas-da-api)
+* [Rotas disponíveis](#rotas-disponiveis)
+* [Exemplo do servidor](#exemplo-do-servidor)
+* [Arquitetura](#arquitetura)
+* [Possíveis melhorias futuras](#possiveis-melhorias-futuras)
+* [Autor](#autor)
+
+>>>>>>> 68dbff1bee5c3dcf838830d7de8625ace64951e2
 
 
 ---
