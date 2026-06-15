@@ -22,11 +22,12 @@ A aplicação foi construída utilizando o módulo HTTP nativo do Node.js, sem u
 * [Como instalar](#-como-instalar)
 * [Como executar](#-como-executar)
 * [Rotas da API](#-rotas-da-api)
-* [Rotas disponíveis](#-rotas-disponíveis)
+* [Rotas disponíveis](#-rotas-disponiveis)
 * [Exemplo do servidor](#-exemplo-do-servidor)
 * [Arquitetura](#-arquitetura)
-* [Possíveis melhorias futuras](#-possíveis-melhorias-futuras)
+* [Possíveis melhorias futuras](#-possiveis-melhorias-futuras)
 * [Autor](#-autor)
+
 
 ---
 
