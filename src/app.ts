@@ -9,9 +9,8 @@ export const server = http.createServer( async (request: http.IncomingMessage, r
     //queryString
     //localhost:3636/api/episodes?p=flow
     
-    const [baseUrl, queryString] = request.url?.split('?') ?? ['', ''] 
-    console.log(baseUrl)
-    console.log(queryString)
+    const baseUrl = request.url?.split("?")[0]
+
     
     //Listar podcasts
     if(request.method === HttpMethod.GET && baseUrl === Routes.LIST){

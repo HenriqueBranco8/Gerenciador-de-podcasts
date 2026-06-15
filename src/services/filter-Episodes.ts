@@ -1,13 +1,13 @@
 import { repoPodcasts } from "../data/podcasts-datas"
-import { filterPodcastModel } from "../models/response-podcast-model"
+import { PodcastTransferModel } from "../models/response-podcasts-transfer-model"
 import { StatusCode } from "../utils/status-code"
 
 
 
-export const filterEpisodes = async(podcastName?: string | undefined) : Promise<filterPodcastModel>  => {
+export const filterEpisodes = async(podcastName?: string | undefined) : Promise<PodcastTransferModel>  => {
 
     //define a interface de retorno
-    let responseFormat: filterPodcastModel = {
+    let responseFormat: PodcastTransferModel = {
         statusCode: 0,
         body: [],
     }
@@ -16,14 +16,9 @@ export const filterEpisodes = async(podcastName?: string | undefined) : Promise<
     //busca os dados
     const queryString = podcastName?.split('?p=')[1] || ''
     const data = await repoPodcasts(queryString)
-    console.log(`Esse> ${queryString}`)
 
     //verifico se tem conteúdo
-    if(data){
-        responseFormat.statusCode = StatusCode.OK
-    } else{
-        responseFormat.statusCode = StatusCode.NO_CONTENT
-    }
+    responseFormat.statusCode = data.length !== 0 ? StatusCode.OK : StatusCode.NO_CONTENT
 
     responseFormat.body = data
 
